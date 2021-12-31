@@ -10,13 +10,14 @@
 
 class Game {
     private:
-        Dealer dealer;
-        Player players[7];
-        Deck decks[4];
+        Dealer *dealer;
+        Player *players;
+        Deck *decks;
 
     public:
-        Game();
-
+        Game(Player *player, Deck *deck);
+        void startPlay();
+        void endPlay();
 
 };
 
