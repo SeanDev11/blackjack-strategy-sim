@@ -4,15 +4,17 @@
 #ifndef GAME_HPP
 #define GAME_HPP
 
-#include "Dealer.hpp"
-#include "Player.hpp"
 #include "Deck.hpp"
+#include "Player.hpp"
+#include "Dealer.hpp"
+
+
 
 class Game {
     private:
-        Dealer *dealer;
+        Dealer dealer;
         Player *players;
-        Deck *decks;
+        Deck *deck;
 
     public:
         Game(Player *player, Deck *deck);

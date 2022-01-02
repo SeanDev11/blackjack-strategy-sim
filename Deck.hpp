@@ -8,10 +8,17 @@
 class Deck {
 
     private:
-        Card *cards[52];
+        Card *cards;
+        int numCards;
 
     public:
         Deck(int amount);
+
+        void shuffle();
+
+        Card* getCards();
+
+        int getNumCards();
 
 };
 

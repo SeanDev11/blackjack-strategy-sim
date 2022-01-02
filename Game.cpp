@@ -3,10 +3,10 @@
 #include "Game.hpp"
 
 // Initialise Dealer and appropriate number of decks
-Game::Game(Player *player, Deck *deck) 
-: players{player}, decks{deck}
+Game::Game(Player *p, Deck *d) 
+: players{p}, deck{d}
 {
-    dealer = new Dealer();
+    // dealer = new Dealer();
 }
 
 void Game::startPlay() {
